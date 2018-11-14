@@ -1,0 +1,15 @@
+name = Open Charity
+description = open charity template test
+package = Core
+version = 1
+core = 7.x
+stylesheets[all][] = styles.css
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlight] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
+regions[footer] = Footer
+regions[page_bottom] = Page bottom

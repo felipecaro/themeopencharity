@@ -1,0 +1,16 @@
+.btn {
+    font-family: 'MuseoSans-500';
+    color: #fff!important;
+    background-color: $link_color;
+    padding: 0.8rem 1.2rem 0.7rem;
+    display: inline-block;
+    border: 1px solid #21bec0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    &.hollow {
+        background-color: #fff;
+        color: $link_color!important;
+    }
+}

@@ -1,0 +1,36 @@
+footer {
+    background: $footer_bk_color;
+    width: 100%;
+    padding: 1rem 0;
+    color: $footer_text_color;
+    .wrapper {
+        display: block;
+        hr {
+            border-top-color: $footer_text_color;
+            margin: 1.5rem 0;
+        }
+        p {
+            font-size: 0.8rem;
+            text-align: center;
+            color: $footer_text_color;
+        }
+        ul.social-share {
+            width: 100%;
+            padding: 0.5rem 0 0 0;
+            display: inline-block;
+            text-align: center;
+            .icons {
+                text-indent: -999px;
+                overflow: hidden;
+                display: inline-block;
+                width: 22px;
+                height: 18px;
+            }
+            li {
+                display: inline-block;
+                margin: 0 0.5rem;
+            }
+            
+        }
+    }
+}

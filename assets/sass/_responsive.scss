@@ -1,0 +1,66 @@
+// responsive specific styles, breakpoints variables in _variables.scss
+@media (max-width: $mobile) {
+    header .wrapper {
+        display: flex;
+    }
+    header .nav-link {
+        display: none;
+    }
+    .hero {
+        padding: 50px 0;
+    }
+    .hero h1 {
+        font-size: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+    .hero p:first-of-type, .hero p:last-of-type {
+        font-size: 1rem;
+    }
+    .hero p {
+        margin: 0 auto 0.8rem auto;
+        margin-bottom: 1rem;
+    }
+    .wrapper {
+        display: block;
+        padding: 0 1rem;
+    }
+    .next_event p {
+        margin-bottom: 1rem;
+    }
+    .next_event .btn {
+        width: 100%;
+        padding: 0.8rem 0 0.7rem 0;
+        text-align: center;
+    }
+    .involved .wrapper > div {
+        padding: 0 0 3rem 0;
+    }
+    .involved .wrapper .btn {
+        width: 100%;
+        margin: 0;
+        padding: 0.8rem 0 0.7rem 0;
+        text-align: center;
+    }
+    .mission .wrapper > div {
+        margin: 0 0 3rem 0;
+    }
+    .mission .wrapper .icons_list li {
+        width: 30%;
+    }
+    .blog .wrapper > div {
+        flex: 1 100%;
+        padding: 0 0 3rem 0;
+    }
+    .blog .wrapper > div p {
+        margin-bottom: 1rem;
+    }
+    footer .wrapper p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: $tablet) {
+    p {
+        font-size: 0.8rem;
+    }
+}

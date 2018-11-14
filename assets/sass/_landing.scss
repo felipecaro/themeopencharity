@@ -1,0 +1,177 @@
+//landing sections
+//global wrapper, flexbox based 
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero {
+    background: url('assets/images/hero_bk.jpg') no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+    padding: 90px 0;
+    text-align: center;
+    .wrapper {
+        flex-direction: column;
+    }
+    h1 {
+        font-family: 'MuseoSans-300';
+        font-size: 3.3rem;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+        color: #fff;
+    }
+    p {
+        max-width: 600px;
+        margin: 0 auto 1rem auto;
+        margin-bottom: 2rem;
+        &:first-of-type, &:last-of-type {
+            font-size: 1.1rem;
+        }
+    }
+}
+.next_event {
+    background-color: $section_gray;
+    p {
+        margin: 0;
+    }
+}
+.involved {
+    .wrapper {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        > div {
+            flex: 3 0px;
+            padding: 0 1rem 2rem 1rem;
+        }
+        h2 {
+            flex: 1 100%;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.9rem;
+        }
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .icons {
+            margin: 0 auto 2rem auto;
+        }
+        .btn {
+            display: table;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0.8rem 2.4rem 0.7rem;
+        }
+    }
+}
+.mission {
+    background-color: $section_gray;
+    .wrapper {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        > div {
+            @include rounded_corners(6px);
+            background: #fff;
+            flex: 3 0px;
+            padding: 0 0.8rem;
+            margin: 0 1rem;
+            position: relative;
+            p {
+                margin-bottom: 0.7rem;
+                top: -20px;
+                position: relative;
+            }
+        }
+        h2, h5, p {
+            flex: 1 100%;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.9rem;
+        }
+        h3 {
+            color: $subtitle_color;
+            text-align: center;
+            top: -20px;
+            position: relative;
+        }
+        h5, p {
+            text-transform: none;
+        }
+        h5 {
+            font-size: 1rem; 
+            margin-bottom: 4.5rem;
+            line-height: 1.3;
+        }
+        
+        .icons {
+            margin: 0 auto;
+            position: relative;
+            top: -40px;
+            width: 98px;
+            height: 90px;
+        }
+
+        .icons_list {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            li {
+                width: 19%;
+                display: inline-block;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+.blog {
+    .wrapper {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        > div {
+            flex: 4 0;
+            padding: 0 0.9rem 2rem 0;
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+        h2 {
+            flex: 1 100%;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 1.9rem;
+        }
+        h3 {
+            font-family: 'Open Sans', sans-serif;
+            color: $subtitle_color;
+            text-align: left;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid $section_gray;
+            /* ellipsis */
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .date {
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            border-top: 1px solid $section_gray;
+            font-size: 0.8rem;
+            display: block;
+        }
+    }
+
+}

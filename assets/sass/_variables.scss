@@ -1,0 +1,23 @@
+//colors
+
+$link_color: #61c0bd;
+$section_gray: #f1f2f5;
+$header_links: #575656;
+$text_color: #5b6172;
+$title_color: $header_links;
+$subtitle_color: #5dc0c9;
+$footer_bk_color: #454850;
+$footer_text_color: #979eb1;
+
+//responsive breakpoints
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1024px;
+
+
+//mixins
+@mixin rounded_corners($radius) {
+    border-radius:  $radius;
+    -moz-border-radius:  $radius;
+    -webkit-border-radius:  $radius;
+}

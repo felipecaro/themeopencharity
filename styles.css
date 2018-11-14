@@ -1,0 +1,400 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'MuseoSans-300';
+  src: url("assets/fonts/MuseoSans-300.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MuseoSans-300.otf") format("opentype"), url("assets/fonts/MuseoSans-300.woff") format("woff"), url("assets/fonts/MuseoSans-300.ttf") format("truetype"), url("assets/fonts/MuseoSans-300.svg#MuseoSans-300") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MuseoSans-500';
+  src: url("assets/fonts/MuseoSans-500.eot?#iefix") format("embedded-opentype"), url("assets/fonts/MuseoSans-500.otf") format("opentype"), url("assets/fonts/MuseoSans-500.woff") format("woff"), url("assets/fonts/MuseoSans-500.ttf") format("truetype"), url("assets/fonts/MuseoSans-500.svg#MuseoSans-500") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  font-size: 10px;
+  color: #5b6172; }
+
+section {
+  padding: 2rem 0; }
+
+a {
+  color: #61c0bd; }
+  a:hover {
+    text-decoration: none;
+    opacity: 0.8; }
+
+h1 {
+  font-size: 1.7rem;
+  font-family: 'MuseoSans-500';
+  color: #575656; }
+
+h2 {
+  font-size: 1.5rem;
+  font-family: 'MuseoSans-500';
+  color: #575656; }
+
+h3 {
+  font-size: 1.1rem;
+  font-family: 'MuseoSans-500';
+  margin-bottom: 0.5rem;
+  color: #575656; }
+  h3 strong {
+    color: #61c0bd; }
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5rem; }
+
+sup {
+  font-size: 0.8rem;
+  vertical-align: top; }
+
+hr {
+  width: 100%;
+  margin: 3rem 10px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid #d9dadd; }
+
+.icons {
+  background: url("assets/images/icons_sprite.png") no-repeat center top;
+  background-size: 129px 674px;
+  width: 128px;
+  height: 108px;
+  display: block; }
+  .icons.meetup {
+    background-position: 0 14px; }
+  .icons.slack {
+    background-position: 0 -95px; }
+  .icons.googlegroup {
+    background-position: 0 -209px; }
+  .icons.charities {
+    background-position: 0 -329px; }
+  .icons.together {
+    background-position: 0 -439px; }
+  .icons.encourage {
+    background-position: 0 -544px; }
+  .icons.facebook-icon {
+    background-position: 7px -652px; }
+  .icons.twitter-icon {
+    background-position: -29px -652px; }
+  .icons.google-icon {
+    background-position: -72px -652px; }
+
+.btn {
+  font-family: 'MuseoSans-500';
+  color: #fff !important;
+  background-color: #61c0bd;
+  padding: 0.8rem 1.2rem 0.7rem;
+  display: inline-block;
+  border: 1px solid #21bec0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease; }
+  .btn.hollow {
+    background-color: #fff;
+    color: #61c0bd !important; }
+
+header {
+  width: 100%;
+  padding: 10px 0; }
+  header .wrapper .logo {
+    background: url("assets/images/logo.png") no-repeat center top;
+    background-size: 153px 24px;
+    width: 153px;
+    height: 24px;
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+    align-self: center;
+    margin: 15px 0; }
+  header .wrapper .submenu ul {
+    margin: 0;
+    padding: 0; }
+    header .wrapper .submenu ul li {
+      display: inline-block;
+      margin: 0 0.5rem; }
+      header .wrapper .submenu ul li a {
+        font-family: 'MuseoSans-500';
+        color: #575656;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        transition: all 0.3s ease; }
+        header .wrapper .submenu ul li a:hover {
+          color: #61c0bd; }
+
+footer {
+  background: #454850;
+  width: 100%;
+  padding: 1rem 0;
+  color: #979eb1; }
+  footer .wrapper {
+    display: block; }
+    footer .wrapper hr {
+      border-top-color: #979eb1;
+      margin: 1.5rem 0; }
+    footer .wrapper p {
+      font-size: 0.8rem;
+      text-align: center;
+      color: #979eb1; }
+    footer .wrapper ul.social-share {
+      width: 100%;
+      padding: 0.5rem 0 0 0;
+      display: inline-block;
+      text-align: center; }
+      footer .wrapper ul.social-share .icons {
+        text-indent: -999px;
+        overflow: hidden;
+        display: inline-block;
+        width: 22px;
+        height: 18px; }
+      footer .wrapper ul.social-share li {
+        display: inline-block;
+        margin: 0 0.5rem; }
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.hero {
+  background: url("assets/images/hero_bk.jpg") no-repeat center top;
+  background-size: cover;
+  width: 100%;
+  color: #fff;
+  padding: 90px 0;
+  text-align: center; }
+  .hero .wrapper {
+    flex-direction: column; }
+  .hero h1 {
+    font-family: 'MuseoSans-300';
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    color: #fff; }
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 1rem auto;
+    margin-bottom: 2rem; }
+    .hero p:first-of-type, .hero p:last-of-type {
+      font-size: 1.1rem; }
+
+.next_event {
+  background-color: #f1f2f5; }
+  .next_event p {
+    margin: 0; }
+
+.involved .wrapper {
+  flex-flow: row wrap;
+  align-items: flex-start; }
+  .involved .wrapper > div {
+    flex: 3 0px;
+    padding: 0 1rem 2rem 1rem; }
+  .involved .wrapper h2 {
+    flex: 1 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.9rem; }
+  .involved .wrapper h3 {
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    text-align: center; }
+  .involved .wrapper p {
+    text-align: center; }
+  .involved .wrapper .icons {
+    margin: 0 auto 2rem auto; }
+  .involved .wrapper .btn {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.8rem 2.4rem 0.7rem; }
+
+.mission {
+  background-color: #f1f2f5; }
+  .mission .wrapper {
+    flex-flow: row wrap;
+    align-items: flex-start; }
+    .mission .wrapper > div {
+      border-radius: 6px;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      background: #fff;
+      flex: 3 0px;
+      padding: 0 0.8rem;
+      margin: 0 1rem;
+      position: relative; }
+      .mission .wrapper > div p {
+        margin-bottom: 0.7rem;
+        top: -20px;
+        position: relative; }
+    .mission .wrapper h2, .mission .wrapper h5, .mission .wrapper p {
+      flex: 1 100%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 1.9rem; }
+    .mission .wrapper h3 {
+      color: #5dc0c9;
+      text-align: center;
+      top: -20px;
+      position: relative; }
+    .mission .wrapper h5, .mission .wrapper p {
+      text-transform: none; }
+    .mission .wrapper h5 {
+      font-size: 1rem;
+      margin-bottom: 4.5rem;
+      line-height: 1.3; }
+    .mission .wrapper .icons {
+      margin: 0 auto;
+      position: relative;
+      top: -40px;
+      width: 98px;
+      height: 90px; }
+    .mission .wrapper .icons_list {
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+      .mission .wrapper .icons_list li {
+        width: 19%;
+        display: inline-block; }
+        .mission .wrapper .icons_list li img {
+          max-width: 100%; }
+
+.blog .wrapper {
+  flex-flow: row wrap;
+  align-items: flex-start; }
+  .blog .wrapper > div {
+    flex: 4 0;
+    padding: 0 0.9rem 2rem 0; }
+    .blog .wrapper > div p {
+      margin-bottom: 2rem; }
+  .blog .wrapper h2 {
+    flex: 1 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.9rem; }
+  .blog .wrapper h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #5dc0c9;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #f1f2f5;
+    /* ellipsis */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .blog .wrapper .date {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid #f1f2f5;
+    font-size: 0.8rem;
+    display: block; }
+
+@media (max-width: 576px) {
+  header .wrapper {
+    display: flex; }
+
+  header .nav-link {
+    display: none; }
+
+  .hero {
+    padding: 50px 0; }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem; }
+
+  .hero p:first-of-type, .hero p:last-of-type {
+    font-size: 1rem; }
+
+  .hero p {
+    margin: 0 auto 0.8rem auto;
+    margin-bottom: 1rem; }
+
+  .wrapper {
+    display: block;
+    padding: 0 1rem; }
+
+  .next_event p {
+    margin-bottom: 1rem; }
+
+  .next_event .btn {
+    width: 100%;
+    padding: 0.8rem 0 0.7rem 0;
+    text-align: center; }
+
+  .involved .wrapper > div {
+    padding: 0 0 3rem 0; }
+
+  .involved .wrapper .btn {
+    width: 100%;
+    margin: 0;
+    padding: 0.8rem 0 0.7rem 0;
+    text-align: center; }
+
+  .mission .wrapper > div {
+    margin: 0 0 3rem 0; }
+
+  .mission .wrapper .icons_list li {
+    width: 30%; }
+
+  .blog .wrapper > div {
+    flex: 1 100%;
+    padding: 0 0 3rem 0; }
+
+  .blog .wrapper > div p {
+    margin-bottom: 1rem; }
+
+  footer .wrapper p {
+    font-size: 0.7rem; } }
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8rem; } }
+
+/*# sourceMappingURL=styles.css.map */

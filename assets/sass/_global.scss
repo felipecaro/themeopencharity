@@ -1,0 +1,88 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    font-size: 10px;
+    color: $text_color;
+}
+section {
+    padding: 2rem 0;
+}
+a {
+    color: $link_color;
+    &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+h1 {
+    font-size: 1.7rem;
+    font-family: 'MuseoSans-500';
+    color: $title_color;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: 'MuseoSans-500';
+    color: $title_color;
+}
+h3 {
+    font-size: 1.1rem;
+    font-family: 'MuseoSans-500';
+    margin-bottom: 0.5rem;
+    color: $title_color;
+    strong {
+        color: $link_color;
+    }
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
+sup {
+    font-size: 0.8rem;
+    vertical-align: top;
+}
+
+hr {
+    width: 100%;
+    margin: 3rem 10px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid #d9dadd;
+}
+.icons {
+    background: url('assets/images/icons_sprite.png') no-repeat center top;
+    background-size: 129px 674px;
+    width: 128px;
+    height: 108px;
+    display: block;
+    &.meetup {
+        background-position: 0 14px;
+    }
+    &.slack {
+        background-position: 0 -95px;
+    }
+    &.googlegroup {
+        background-position: 0 -209px;
+    }
+    &.charities {
+        background-position: 0 -329px;
+    }
+    &.together {
+        background-position: 0 -439px;
+    }
+    &.encourage {
+        background-position: 0 -544px;
+    }
+    &.facebook-icon {
+        background-position: 7px -652px;
+    }
+    &.twitter-icon {
+        background-position: -29px -652px;
+    }
+    &.google-icon {
+        background-position: -72px -652px;
+    }
+}

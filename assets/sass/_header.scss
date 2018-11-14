@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    padding: 10px 0;
+    .wrapper { 
+        .logo {
+            background: url('assets/images/logo.png') no-repeat center top;
+            background-size: 153px 24px;
+            width: 153px;
+            height: 24px;
+            display: inline-block;
+            text-indent: -999px;
+            overflow: hidden;
+            align-self: center;
+            margin: 15px 0;
+        }
+        .submenu {
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    display: inline-block;
+                    margin: 0 0.5rem;
+                    a {
+                        font-family: 'MuseoSans-500';
+                        color: $header_links;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: 14px;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: $link_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
